@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingLeft="4dp"
+    android:id="@+id/chat_container"
+    android:paddingRight="4dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/chats_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/timestamp_row_chat"
+        android:layout_alignBottom="@+id/timestamp_row_chat"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/chats_profilepic"
+        android:text="Ali Esa Assadi"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/last_message_row_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/chats_names"
+        android:layout_below="@+id/chats_names"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="5dp"
+        android:text="hi how are you ?" />
+
+    <TextView
+        android:id="@+id/timestamp_row_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="15:35" />
+
+    <ImageView
+        android:id="@+id/btn_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/last_message_row_chat"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_point_24px"
+        android:visibility="gone" />
+
+    <com.wenkey.customViews.RoundedImageView
+        android:id="@+id/chats_profilepic"
+        android:layout_width="55dp"
+        app:srcCompat="@drawable/ali"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/chats_profilepic"
+        android:layout_marginTop="8dp"
+        android:background="#BEBEBE"></View>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4a3d60</color>
+    <color name="colorPrimaryDark">#4a3d60</color>
+    <color name="colorPrimaryLight">#a8a3b0</color>
+
+    <color name="colorAccent">#4a3d60</color>
+
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="pb_red">#ffff4444</color>
+
+    <color name="gray_light_very">#F0F0F0</color>
+    <color name="gray_light_new">#DADADA</color>
+
+
+
+</resources>

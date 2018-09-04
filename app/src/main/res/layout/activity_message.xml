@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light_very"
+    android:baselineAligned="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/asdasd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+        </android.support.v7.widget.Toolbar>
+
+
+        <com.wenkey.customViews.RoundedImageView
+            android:id="@+id/profile_picture_activity_message"
+            app:srcCompat="@drawable/ali"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:id="@+id/name_activity_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/profile_picture_activity_message"
+            android:text="Ali Esa Assadi"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/online_activity_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/name_activity_message"
+            android:text="Online"
+            android:textColor="@color/gray_light_new"
+            android:textSize="10dp"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/asdasd"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/message_list_activity_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/testtest"
+        android:layout_below="@+id/view3"
+        android:layout_weight="1"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        app:stackFromEnd="true"
+        tools:listitem="@layout/row_message" />
+    <include layout="@layout/row_message" />
+
+    <include layout="@layout/row_message" />
+
+    <include layout="@layout/row_message" />
+    <include layout="@layout/row_message" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/testtest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#FFF"
+        android:padding="5dp">
+
+
+        <Button
+            android:id="@+id/button_send_activity_message"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_send_button" />
+
+
+        <EditText
+            android:id="@+id/text_to_send_activity_message"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11dp"
+            android:background="@android:color/transparent"
+            android:hint="type a message"
+            android:paddingLeft="10dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "189066998991",
+    "firebase_url": "https://wenkey-3a97a.firebaseio.com",
+    "project_id": "wenkey-3a97a",
+    "storage_bucket": "wenkey-3a97a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189066998991:android:9aad760cb9cc5b9f",
+        "android_client_info": {
+          "package_name": "com.wenkey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189066998991-dfbfvqiqpfdsr0j82shm9c4jr180nj8r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wenkey",
+            "certificate_hash": "78f5e7b8182b0b5727843fee07d83f30a652cb69"
+          }
+        },
+        {
+          "client_id": "189066998991-gpikjps88f43jmbhvig5i045rb7jjjgh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFRhv7j1vogniZq9fyfhfEZVogysr588Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189066998991-gpikjps88f43jmbhvig5i045rb7jjjgh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
